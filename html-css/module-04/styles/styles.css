@@ -1,0 +1,251 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before
+*::after {
+    padding: 0;
+    margin: 0;
+box-sizing: inherit;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+body {
+font-family: 'Open+Sans', 'Roboto', serif;
+color: #6c7279;
+font-size: 14px;
+line-height: 17px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+width: 1110px;
+margin: 0 auto;
+}
+
+.page-nav {
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+font-size: 0;
+}
+
+h1 {
+float: left;
+margin: 0;
+padding: 0;
+}
+h1::first-letter {
+color: #1abc9c;
+}
+.main-icon a {
+font-size: 30px;
+line-height: 32px;
+margin-bottom: 36px;
+color: #555252;
+text-decoration: none;
+text-transform: uppercase;
+}
+.page-header {
+margin-bottom: 103px;
+}
+.page-nav {
+padding: 38px 0;
+}
+.site-navigation {
+    width: 476px;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation a {
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+    color: #0f0101;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 17px;
+
+}
+.site-navigation li {
+    float: left;
+    padding-top: 8px;
+}
+.site-navigation li:not(:last-child) {
+    margin-right: 32px;
+}
+.site-navigation a:hover, 
+.site-navigation a:focus{
+    color: #1abc9c;
+}
+
+.main-title {
+display: block;
+margin: 0;
+padding: 0;
+font-size: 48px;
+line-height: 58px;
+color: #515151;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 95px;
+}
+.main-title::after {
+display: block;
+width: 164px;
+height: 7px;
+background-color: #1abc9c;
+content: '';
+margin: 0 auto;
+margin-top: 32px;
+}
+
+.content {
+margin: 0;
+padding: 0;
+font-size: 0;
+list-style: none;
+}
+.menu-item {
+padding: 0;
+}
+.menu-item-list {
+float: left;
+width: 255px;
+}
+.item-name {
+display: inline-block;
+width: 200px;
+height: 40px;
+font-size: 18px;
+line-height: 32px;
+text-transform: uppercase;
+vertical-align: middle;
+color: #bfbfbf;
+background-color: #323232;
+margin: 0;
+font-family: 'Roboto', serif;
+}
+.item-price {
+display: inline-block;
+width: 55px;
+height: 40px;
+font-size: 18px;
+line-height: 32px;
+text-transform: uppercase;
+text-align: center;
+color: #ffffff;
+background-color: #8c8c8c;
+margin: 0;
+font-family: 'Roboto', serif;
+}
+.menu-item-list:not(:nth-child(4n)){
+margin-right: 30px;
+}
+.menu-item-list {
+margin-bottom: 30px;
+}
+.menu {
+margin: 98px;
+}
+
+.title-news {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 58px;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-news::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 0 auto;
+    margin-top: 32px;
+    }
+    .about {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        list-style: none;
+        }
+    .title-news {
+    margin: 92px;
+    }
+    .about-menu-list {
+    padding: 0;
+    list-style: none;
+    }
+    .about-menu-item {
+    float: left;
+    width: 350px;
+    }
+    .about-menu-item img {
+    margin-bottom: 18px;
+    }
+    .about-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #555252;
+    text-decoration: none;
+    font-weight: 600;
+    }
+    .about-title::after {
+        display: block;
+        width: 136px;
+        height: 3px;
+        background-color: #1abc9c;
+        content: '';
+        margin-bottom: 34px;
+        margin-top: 18px;
+        }
+    
+    .about-info {
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+    color: #555252;
+    margin-bottom: 24px;
+    }
+    .about-menu-item:not(:last-child){
+    margin-right: 30px;
+    }
+    .about-menu-item a {
+        display: block;
+        width: 160px;
+        height: 52px;
+        border: none;
+        text-decoration: none;
+        margin: 0;
+        padding-top: 12px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        color: rgb(0, 0, 0);;
+        cursor: pointer;  
+    }
+    .about-menu-item a:hover, 
+    .about-menu-item a:focus {
+        color:#ffffff;
+        background-color: rgb(78, 198, 171);
+        border: none;
+    }
