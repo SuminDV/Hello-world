@@ -14,8 +14,9 @@ content: "";
 display: table;
 clear: both;
 }
+
 body {
-font-family: 'Open+Sans', 'Roboto', serif;
+font-family: 'Roboto','Open+Sans', serif;
 color: #6c7279;
 font-size: 14px;
 line-height: 17px;
@@ -56,28 +57,29 @@ text-decoration: none;
 text-transform: uppercase;
 }
 .page-header {
-margin-bottom: 103px;
+padding-bottom: 103px;
 }
 .page-nav {
-padding: 38px 0;
+padding: 38px;
 }
 .site-navigation {
-    width: 476px;
+    width: 570px;
     float: right;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 .site-navigation a {
-    font-size: 14px;
     display: block;
+    font-size: 14px;
+    line-height: 17px; 
     font-weight: 700;
     color: #0f0101;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 17px;
-
+    font-family: 'Open+Sans', serif;
 }
+
 .site-navigation li {
     float: left;
     padding-top: 8px;
@@ -129,20 +131,18 @@ display: inline-block;
 width: 200px;
 height: 40px;
 font-size: 18px;
-line-height: 32px;
+line-height: 40px;
 text-transform: uppercase;
-vertical-align: middle;
 color: #bfbfbf;
 background-color: #323232;
 margin: 0;
-font-family: 'Roboto', serif;
 }
 .item-price {
 display: inline-block;
 width: 55px;
 height: 40px;
 font-size: 18px;
-line-height: 32px;
+line-height: 40px;
 text-transform: uppercase;
 text-align: center;
 color: #ffffff;
@@ -156,8 +156,11 @@ margin-right: 30px;
 .menu-item-list {
 margin-bottom: 30px;
 }
-.menu {
-margin: 98px;
+.menu-item-list:nth-child(n+4){
+    margin-bottom: 0px;
+}
+.content {
+margin-bottom: 98px;
 }
 
 .title-news {
@@ -186,9 +189,10 @@ margin: 98px;
         list-style: none;
         }
     .title-news {
-    margin: 92px;
+    margin-bottom: 92px;
     }
     .about-menu-list {
+    margin: 0;
     padding: 0;
     list-style: none;
     }
@@ -204,6 +208,7 @@ margin: 98px;
     line-height: 26px;
     color: #555252;
     text-decoration: none;
+    font-family: 'Open+Sans', serif;
     font-weight: 600;
     }
     .about-title::after {
@@ -213,12 +218,13 @@ margin: 98px;
         background-color: #1abc9c;
         content: '';
         margin-bottom: 34px;
-        margin-top: 18px;
         }
     
     .about-info {
     font-size: 14px;
     line-height: 26px;
+    font-weight: 400;
+    font-family: 'Open+Sans', serif;
     color: #555252;
     color: #555252;
     margin-bottom: 24px;
@@ -226,14 +232,15 @@ margin: 98px;
     .about-menu-item:not(:last-child){
     margin-right: 30px;
     }
-    .about-menu-item a {
+    
+    .about-menu-item button {
         display: block;
         width: 160px;
         height: 52px;
         border: none;
         text-decoration: none;
+        font-family: 'Open+Sans', serif;
         margin: 0;
-        padding-top: 12px;
         text-align: center;
         font-size: 16px;
         line-height: 26px;
@@ -243,8 +250,8 @@ margin: 98px;
         color: rgb(0, 0, 0);;
         cursor: pointer;  
     }
-    .about-menu-item a:hover, 
-    .about-menu-item a:focus {
+    .about-menu-item button:hover, 
+    .about-menu-item button:focus {
         color:#ffffff;
         background-color: rgb(78, 198, 171);
         border: none;
