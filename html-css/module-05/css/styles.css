@@ -232,7 +232,7 @@ h1::first-letter{
     left: 10px;
     top: 10px;
 }
-.collection-icon {
+.collection__icon {
     display: none;
     position: absolute;
     list-style: none;
@@ -242,7 +242,7 @@ h1::first-letter{
     left: 35px;
     top: 80px;
 }
-.icon-blocks {
+.icon__blocks {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -251,7 +251,7 @@ h1::first-letter{
     top: 80px;
     display: none;
 }
-.collection-icon-item {
+.collection__icon__item {
     display: block;
     background: none;
     width: 50px;
@@ -263,10 +263,10 @@ h1::first-letter{
     left: 34px;
     cursor: pointer;
 }
-.collection-icon-item:not(:nth-child(3)) {
+.collection__icon__item:not(:nth-child(3)) {
     margin-right: 9px;
 }
-.collection-icon-item::before {
+.collection__icon__item::before {
     content:'';
     background-repeat: no-repeat;
     background-position: center;
@@ -388,7 +388,7 @@ h1::first-letter{
     margin: 0 auto;
     background-color: rgb(50, 50, 50);
 }
-.rights {
+.main__rights {
     text-align: center;
     font-size: 16px;
     line-height: 88px;
