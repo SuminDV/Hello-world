@@ -15,7 +15,7 @@ box-sizing: inherit;
     }
 
 body{
-    font-family: 'Roboto', 'Open+Sans', serif;
+    font-family: 'Roboto', 'Open+Sans', sans-serif;
     color: #6c7279;
     font-size: 14px;
     line-height: 17px;
@@ -40,17 +40,14 @@ img {
     font-size: 0;
 }
 
-h1 {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-h1::first-letter{
+.main__title::first-letter{
     color: #1abc9c;
 }
 
 .main__title {
+    float: left;
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     line-height: 32px;
     text-decoration: none;
@@ -73,11 +70,11 @@ h1::first-letter{
     display: block;
     font-size: 14px;
     line-height: 17px;
+    font-family: 'Open+Sans', sans-serif;
     font-weight: 700;
     color: #0f0101;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Open+Sans', serif;
 }
 .nav__items li {
     float: left;
@@ -177,9 +174,6 @@ h1::first-letter{
     background-position: center;
 } 
 
-.content {
-    margin-bottom: 94px;
-}
 
 /* New collection */
 
@@ -310,8 +304,8 @@ h1::first-letter{
 }
 .hidden__button p {
     font-size: 14px;
+    font-family: 'Open+Sans', sans-serif;
     display: inline-block;
-    width: 90px;
     margin: 0;
     padding: 0;
     line-height: 50px;
@@ -392,6 +386,7 @@ h1::first-letter{
     text-align: center;
     font-size: 16px;
     line-height: 88px;
+    font-family: 'Open+Sans', sans-serif;
     color: #ffffff;
     margin: 0;
 }
