@@ -1,0 +1,358 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+​
+html {
+    box-sizing: border-box;
+}
+​
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+​
+a {
+    text-decoration: none;
+}
+​
+ul {
+    list-style: none;
+}
+​
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+​
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-700 - latin */
+  @font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+         url('../fonts/roboto-slab-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.img_logo {
+    padding-left: 7px;
+}
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.site-navigation {
+    display: flex;
+    width: 480px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+.site-navigation a {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(34, 34, 34);
+    position: relative;
+    transition: all;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.site-navigation li:hover a {
+    color: rgb(254, 209, 54);
+}
+.site-navigation li:focus a{
+    color: rgb(254, 209, 54);
+}
+/*Services*/
+.services {
+    padding-top: 80px;
+    padding-bottom: 122px;
+}
+.services__discr {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 80px;
+
+}
+.services__title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.services__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+.services__item {
+    flex-basis: 280px;
+    position: relative;
+    padding-top: 96px;
+}
+
+.services__item::before {
+    content:'';
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 74px;
+    width: 74px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon__bascket::before {
+    background-image: url(../img/Circle-1.png);
+}
+.icon__laptop::before {
+    background-image: url(../img/Circle-2.png);
+}
+.icon__locked::before {
+    background-image: url(../img/Circle-3.png);
+}
+.services__item h3 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.services__item p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    text-align: center;
+}
+/*Contact us*/
+.contact__us {
+    background-image: url(../img/Background.jpg);
+    height: 676px;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 104px;
+    padding-bottom: 114px;
+}
+.contact__title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.contact__discr {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 76px;
+}
+
+.profile__form {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.input__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.send__message__button {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile__form .input__items input {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    width: 455px;
+    height: 52px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(187, 187, 187);
+    padding-left: 20px;
+}
+.profile__form textarea {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    width: 455px;
+    height: 210px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(187, 187, 187);
+    text-align: left;
+    resize: vertical;
+    padding-left: 20px;
+    padding-top: 18px;
+}
+.send__message__button {
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+    border: none;
+}
+.send__message__button:hover {
+    transform: scale(1.1);
+
+}
+.profile__form input[type="text"]:valid {
+    outline-color: rgb(0, 255, 0);
+}
+.profile__form input[type="email"]:valid {
+    outline-color: rgb(0, 255, 0);
+}
+.profile__form input[type="text"]:invalid {
+    outline-color: rgb(255, 0, 0);
+}
+.profile__form input[type="email"]:invalid {
+    outline-color: rgb(255, 0, 0);
+}
+textarea:valid {
+    outline-color: rgb(0, 255, 0);
+}
+textarea:invalid {
+    outline-color: rgb(255, 0, 0);
+}
