@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -60,21 +60,26 @@ body {
   background-position: center;
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding-top: 20px;
   margin: 0 auto;
+  padding-bottom: 138px;
 }
 
 .wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 138px;
+  
+}
+
+.navigation {
+  margin-bottom: 36px;
 }
 
 
 .authorize {
   text-align: center;
-  padding-bottom: 98px;
+  margin-bottom: 98px;
 }
 
 .log__in {
@@ -153,13 +158,17 @@ body {
   font-weight: bold;
   cursor: pointer;
   border: none;
+  display: block;
+  margin: 0 auto;
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
+  
 }
 
 .partners {
   margin: 0 auto;
   padding-top: 68px;
+  padding-bottom: 56px;
 }
 
 .meet__partner {
@@ -178,11 +187,12 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 28px;
 }
 
 .partners__list__item img {
   margin: 0 auto;
-  margin-bottom: 20px;
+  
 }
 
 .name {
@@ -205,12 +215,12 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  padding-bottom: 60px;
 }
 
 .partners__icon {
   width: 121px;
   margin: 0 auto;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -304,6 +314,8 @@ body {
 }
 .find__partner {
     width: 226px;
+    display: block;
+    margin: 0 auto;
 }
 /*Partners*/
 .partners {
@@ -384,6 +396,10 @@ body {
 .partners__list__item {
     max-width: 220px;
     margin: 0;
+}
+
+.partners__list__item:nth-of-type(2n+1) {
+  margin-bottom: 0;
 }
 }
 
